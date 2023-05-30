@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:testing/src/screen/ApiFetch.dart';
 /* import 'package:testing/src/screen/About.dart'; */
 /* import 'package:testing/src/screen/ApiFetch.dart'; */
 /* import 'package:testing/src/screen/HomePage1.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SilderImage(),
+      home: ApiFetch(),
       /*  initialRoute: '/',
       routes: {'/': (context) => HomePage1(), '/about': (context) => About()},
      */

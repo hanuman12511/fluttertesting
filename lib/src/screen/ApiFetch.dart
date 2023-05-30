@@ -2,6 +2,8 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:testing/src/screen/About.dart';
+import 'package:testing/src/screen/SliderImage.dart';
 
 class ApiFetch extends StatelessWidget {
   @override
@@ -71,10 +73,8 @@ class _HomePageState extends State<HomePage> {
         body: Container(
           padding: EdgeInsets.all(16.0),
           child: Column(
-            children: <Widget>[
-              Container(
-                child: Text("hello"),
-              ),
+            children: [
+              About(),
             ],
           ),
           /*  FutureBuilder(
