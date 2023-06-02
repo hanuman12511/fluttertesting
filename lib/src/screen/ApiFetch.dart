@@ -70,14 +70,9 @@ class _HomePageState extends State<HomePage> {
             Icons.get_app,
           ),
         ),
-        body: Container(
-          padding: EdgeInsets.all(16.0),
-          child: Column(
-            children: [
-              About(),
-            ],
-          ),
-          /*  FutureBuilder(
+        body: About(),
+
+        /*  FutureBuilder(
             future: getRequest(),
             builder: (BuildContext ctx, AsyncSnapshot snapshot) {
               if (snapshot.data == null) {
@@ -98,7 +93,6 @@ class _HomePageState extends State<HomePage> {
               }
             },
           ), */
-        ),
       ),
     );
   }

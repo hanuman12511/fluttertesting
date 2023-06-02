@@ -4,33 +4,46 @@ import 'HomePage.dart';
 class About extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        children: [
+    return /* SingleChildScrollView(
+      child: Column(children: [
+        for (int i = 0; i < 20; i++)
           Container(
-            decoration: BoxDecoration(
-                color: Colors.amber, borderRadius: BorderRadius.circular(30)),
-            margin: EdgeInsets.only(top: 50),
-            padding: EdgeInsets.all(20),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Container(
-                    child: Column(
-                  children: const <Widget>[
-                    Text("programming"),
-                    Text("programming"),
-                    Image(
-                      image: NetworkImage(
-                        'https://images.pexels.com/photos/1525043/pexels-photo-1525043.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-                      ),
-                      width: 200,
-                      repeat: ImageRepeat.noRepeat,
-                    ),
-                  ],
-                )
+            margin: EdgeInsets.all(10),
+            height: 50,
+            width: double.infinity,
+            color: Colors.blue,
+          )
+      ]),
+ */
+        Center(
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
+            Container(
+              decoration: BoxDecoration(
+                  color: Colors.amber, borderRadius: BorderRadius.circular(30)),
+              margin: EdgeInsets.only(top: 50),
+              padding: EdgeInsets.all(20),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                      alignment: Alignment.center,
+                      child: Column(
+                        children: const <Widget>[
+                          Text("programming"),
+                          Text("programming"),
+                          Image(
+                            image: NetworkImage(
+                              'https://images.pexels.com/photos/1525043/pexels-photo-1525043.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+                            ),
+                            width: 200,
+                            repeat: ImageRepeat.noRepeat,
+                          ),
+                        ],
+                      )
 
-                    /* new Image.network(
+                      /* new Image.network(
                     'https://images.pexels.com/photos/1525043/pexels-photo-1525043.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
                     width: 200,
                   ),
@@ -38,44 +51,50 @@ class About extends StatelessWidget {
                   /* new Image.asset('assets/images/pro.jpg'),
                   alignment: Alignment.center, */
                   margin: EdgeInsets.all(70), */
-                    ),
-                Container(
-                  color: Colors.deepOrange,
-                  child: Text("data"),
-                ),
-              ],
+                      ),
+                  Container(
+                    alignment: Alignment.center,
+                    color: Colors.deepOrange,
+                    child: Text("data"),
+                  ),
+                ],
+              ),
             ),
-          ),
-          Container(
-            decoration: BoxDecoration(
-                color: Colors.amber, borderRadius: BorderRadius.circular(30)),
-            margin: EdgeInsets.only(top: 50),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Container(
-                  color: Colors.cyan,
-                  child: Text("data"),
-                ),
-                Container(
-                  color: Colors.deepOrange,
-                  child: Text("data"),
-                ),
-                Container(
-                  color: Colors.deepOrange,
-                  child: Text("data"),
-                ),
-                /* Text(
+            Container(
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                  color: Colors.amber, borderRadius: BorderRadius.circular(30)),
+              margin: EdgeInsets.only(top: 50),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    color: Colors.cyan,
+                    child: Text("data"),
+                    height: 200,
+                  ),
+                  Container(
+                    color: Colors.deepOrange,
+                    child: Text("data"),
+                    height: 200,
+                  ),
+                  Container(
+                    color: Colors.deepOrange,
+                    child: Text("data"),
+                    height: 200,
+                  ),
+                  /* Text(
                   "data",
                   style: TextStyle(
                       color: Colors.blueGrey,
                       fontSize: 30,
                       fontFamily: AutofillHints.postalCode),
                 ), */
-              ],
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
     /*  return Scaffold(

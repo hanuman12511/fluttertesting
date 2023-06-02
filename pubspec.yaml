@@ -38,6 +38,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   http: ^0.13.6
   carousel_slider: ^4.2.1
+  simple_animations: ^5.0.0+3
+  animated_bottom_navigation_bar: ^1.2.0
   
 
 dev_dependencies:
