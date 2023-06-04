@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:testing/src/components/HeaderBar.dart';
 
 class ProductTab extends StatelessWidget {
   const ProductTab({super.key});
-  menubarbutton() {
-    print("context");
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -140,40 +138,6 @@ class ProductTab extends StatelessWidget {
               )
             ]),
           )
-        ],
-      ),
-    );
-  }
-
-  HeaderBar() {
-    return Container(
-      height: 70,
-      decoration: BoxDecoration(color: Colors.red),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Container(
-            child: Row(children: [
-              IconButton(
-                onPressed: menubarbutton,
-                icon: Icon(
-                  Icons.menu,
-                  color: Colors.white,
-                ),
-              ),
-              Text(
-                "Hi Hanuman",
-                style: TextStyle(color: Colors.white),
-              ),
-            ]),
-          ),
-          IconButton(
-            onPressed: menubarbutton,
-            icon: Icon(
-              Icons.notifications,
-              color: Colors.white,
-            ),
-          ),
         ],
       ),
     );
